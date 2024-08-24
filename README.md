@@ -6,8 +6,13 @@ Along with this, I am also tryng to showcase the traffic flow. When program runs
 Lets say if you terminate a process in the middle of the running program then you will see that there is no hash and also no traffic. And then if you start chrome again then you will see new hash and also traffic running. Also if the hash is same after 60 seconds, that means the same process is still running, then I am stopping traffic capture to demonstarte that I am discarding redundant data. (This traffic may vary based on how chrome is being used. But I have just taken a very simple case.)
 
 Usage for HashAndTraffic.py
+
 Open CMD on Windows.
+
 C:\Users\nakul>python <path to HashAndTraffic.py> <process to monitor>
+
 e.g.
+
 C:\Users\nakul>python HashAndTraffic.py chrome.exe
+
 Note: The traffic capture in this program may vary based on the process you are monitoring. I have written the code with chrome.exe.
