@@ -16,3 +16,11 @@ e.g.
 C:\Users\nakul>python HashAndTraffic.py chrome.exe
 
 Note: The traffic capture in this program may vary based on the process you are monitoring. I have written the code with chrome.exe.
+
+Usage for Test_Hash_And_traffic_Pytest.py
+
+You can run this file like this.
+
+C:\Users\nakul>python Test_Hash_And_traffic_Pytest.py
+
+This file is just testing representation of the file Hash_And_Traffic.py
