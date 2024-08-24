@@ -1,0 +1,28 @@
+Monitoring network traffic on a Windows platform can be done using a variety of tools and methods.
+
+Built-in Tools
+
+Task Manager: The Performance tab provides a basic overview of network activity including bandwidth usage and packet loss.
+
+Windows PowerShell: You can use PowerShell cmdlets like "Get-Counter" to retrieve performance counters related to network traffic, such as "Network Interface Bytes Total/sec."
+
+Third Party Tools
+
+Wireshark: Captures and analyzes network traffic in real time. It can be used to troubleshoot network problems, identify security threats, and monitor network performance
+
+Netstat: A command-line utility that displays TCP/IP network statistics. It can be used to view active connections, listen ports, and routing table information.
+
+To monitor network traffic programmatically in Python, you can use libraries like scapy, pyshark, or socket.
+
+Scapy
+
+Introduction — Scapy 2.6.0 documentation
+Scapy is a powerful and versatile Python library used for network packet manipulation.
+Scapy allows you to create and customize packets for a wide range of network protocols. You can capture live network traffic and analyze packets in real-time.
+Scapy supports a wide variety of network protocols, including Ethernet, IP, TCP, UDP, ICMP, ARP, and many more. This makes it a versatile tool for network analysis and testing. Scapy provides an interactive shell that allows you to quickly test and debug network scripts. Scapy runs on multiple platforms, including Linux, macOS, and Windows.
+
+Pyshark
+
+GitHub - KimiNewt/pyshark: Python wrapper for tshark, allowing python packet parsing using wireshark dissectors
+
+PyShark is a Python wrapper for TShark, the command-line version of Wireshark. It allows you to capture, parse, and analyze network packets using Wireshark’s powerful dissectors directly from Python. PyShark can capture live network traffic from interfaces or read packets from capture files (e.g., PCAP files). It uses Wireshark’s dissectors to parse packets, providing detailed information about each packet, including protocol layers and fields. You can apply display filters (similar to Wireshark) to capture or read only specific packets of interest. Pyshark works on multiple platforms Windows, Mac and Linux. PyShark is a powerful tool for network analysis and monitoring, leveraging the capabilities of Wireshark in a Pythonic way.
